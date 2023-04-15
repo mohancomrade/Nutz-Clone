@@ -1,0 +1,79 @@
+/* Default styles */
+
+.brand-today{
+  padding-left: 250px;
+  padding-top: 100px;
+
+}
+
+.brand-today h1{
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.brand-text{
+  padding-left: 100px;
+  display: flex;
+}
+
+.brand-header{
+  display: flex;
+  background-color: rgb(247,247,252);
+  margin-top: 140px;
+  border-radius: 150px;
+}
+
+.brand-img img {
+  width: 800px;
+  height: 500px;
+  margin-left: 40px;
+}
+
+.brand-img img:hover{
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  */
+  /* transition: box-shadow 0.3s ease-in-out; */
+   /* transform: scale(1.2);  */
+  /* transition: transform 0.5s ease-in-out; */
+}
+
+
+.bi.bi-play-circle-fill {
+  width: 90px;
+  height: 100px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .brand-today{
+      padding: 50px;
+  }
+
+  .brand-text{
+      padding: 50px 0;
+      flex-direction: column;
+  }
+
+  .brand-img img {
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+      margin-bottom: 20px;
+  }
+
+  .bi.bi-play-circle-fill {
+      width: 60px;
+      height: 70px;
+      padding-right: 5px;
+  }
+}
+.video-icon svg:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in, transform 0.5s ease-out;
+}
+
+
+
+

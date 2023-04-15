@@ -1,0 +1,198 @@
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 150px;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(249, 240, 240);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.nav-li-hover:hover,.nav-li-products:hover,.nav-li-blogs:hover {
+  cursor: pointer;
+  color: #000000
+}
+
+.nav-ul li {
+  position: relative;
+}
+
+#submenu,#submenu1,#submenu2 {
+  left: 0;
+  opacity: 0;
+   position:absolute;
+  top: 20px;
+  visibility: hidden;
+  z-index: 1;
+  list-style: none;
+  background-color: #fff;
+  font-size: 16px;
+  justify-content: space-between;
+  margin-left: 100px;
+
+  
+  
+  
+}
+
+.nav-ul li:hover ul#submenu,.nav-ul li:hover ul#submenu1 {
+  opacity: 1;
+  visibility: visible;
+  top: 30px;
+  box-shadow: 0 10px 38px 0 rgba(203, 202, 202, 0.2), 10px 16px 20px 0 rgba(193, 193, 193, 0.19);
+  border: 0.10px solid white;
+  margin: 0 0px 30px 0;
+  border-radius: 20px;
+  padding: 12px 50px;
+  transition: box-shadow 0.10s ease-in-out;
+  transform: scale(1.0);
+}
+
+.nav-ul li:hover ul#submenu2{
+   
+  opacity: 1;
+  visibility: visible;
+  top: 20px;
+  box-shadow: 0 10px 38px 0 rgba(203, 202, 202, 0.2), 10px 16px 20px 0 rgba(193, 193, 193, 0.19);
+  border: 0.10px solid white;
+  margin: 0 0px 30px 0;
+  border-radius: 20px;
+  padding: 40px 40px;
+  justify-content: space-between;
+  margin-left: -60px;
+
+}
+.blog-li{
+
+  font-size: 15px;
+  color: #303032;
+  margin-bottom: 15px;
+}
+.submenu a{
+
+  justify-content: space-between;
+}
+
+
+.graphic-nav img,.dev-nav img,.security-nav img{
+  width: 20px;
+  margin-left: -30px;
+}
+.graphic-nav p,.dev-nav p,.security-nav p{
+
+  margin-top: -45px;
+  color: #000000;
+}
+
+.graphic-nav h6,.dev-nav h6,.security-nav h6{
+
+ font-size: 10px;
+ color: #5A5B75;
+ margin-top: -12px;
+}
+.graphic-nav a {
+  text-decoration: none !important;
+}
+.graphic-hr,.dev-hr,.security-hr{
+
+  /* width: 100px; */
+  width: 215px;
+  margin-right: -150px;
+  margin-left: -50px;
+  /* margin-top: -5px; */
+}
+.sports-nav img{
+
+  width: 20px;
+  margin-left: -30px;
+}
+
+.sports-nav p{
+  margin-top: -45px;
+  color: #000000;
+}
+
+.sports-nav h6{
+  font-size: 10px;
+ color: #5A5B75;
+ margin-top: -12px;
+}
+.sports-hr{
+
+    /* width: 100px; */
+    width: 215px;
+    margin-right: -150px;
+    margin-left: -50px;
+    /* margin-top: -5px; */
+}
+  
+  /* Media query for screens smaller than 768px */
+  @media (max-width: 768px) {
+    .header-nav {
+      padding: 30px 50px;
+    }
+  }
+  
+  /* Media query for screens smaller than 576px */
+  @media (max-width: 576px) {
+    .header-nav {
+      padding: 20px 30px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo {
+      margin-bottom: 20px;
+    }
+  
+    .nav-ul {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Styles for all screen sizes */
+  .logo {
+    width: 153px;
+    height: 50px;
+  }
+  
+  .nav-ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    font-weight: bold;
+    color: #5A5B75;
+    font-size: 17px;
+    margin-top: 15px;
+  }
+  
+  .nav-li:hover {
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .nav-contact {
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .head-contact {
+    padding-left: 5px;
+    color: #5A5B75;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  #home-id {
+    color: black;
+  }
+  
+
