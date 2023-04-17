@@ -1,57 +1,40 @@
 .trust-heading{
-
-   
     text-align: center;
     /* padding-top: 100px; */
 }
-
 .trust-heading h1{
- 
-     /* padding-top: 50px; */
-     padding-bottom: 50px
-     ;
-
+ /* padding-top: 50px; */
+     padding-bottom: 50px;
 }
-
 .slider {
-   
-    white-space: nowrap;
+   white-space: nowrap;
     overflow: hidden;
     padding-top: 50px;
   }
-
   .slider1{
-
-    white-space: nowrap;
+   white-space: nowrap;
     overflow: hidden;
     padding-top: 50px;
   }
-  
-  .slider img {
+.slider img {
     display: inline-block;
     vertical-align: middle;
     width: 320px; /* Set the width of the images */
     margin-right: -4px; /* Negative margin to remove the gap between images */
     animation: slide 5s linear infinite; /* Set the animation properties */
   }
-
-
-  .slider1 img{
-
+.slider1 img{
     display: inline-block;
     vertical-align: middle;
     width: 320px; /* Set the width of the images */
     margin-right: -4px; /* Negative margin to remove the gap between images */
     animation: slide1 5s linear infinite; /* Set the animation properties */
   }
-
-  .slider1 img {
-         
+.slider1 img {
     /* padding-top: 50px; */
     padding-bottom: 80px;
   }
-  
-  @keyframes slide {
+@keyframes slide {
     from {
       transform: translateX(-100%);
     }
@@ -78,4 +61,18 @@
   }
   
 
+  @media only screen and (max-width: 768px) {
+    .slider img,
+    .slider1 img {
+      animation-duration: 10s;
+    }
+  }
   
+  /* Hide overflow on small screens */
+  @media only screen and (max-width: 480px) {
+    .slider,
+    .slider1 {
+      overflow: hidden;
+    
+    }
+  }

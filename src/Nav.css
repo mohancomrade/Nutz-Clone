@@ -10,7 +10,6 @@
   right: 0;
   z-index: 999;
 }
-
 .nav-li-hover:hover,.nav-li-products:hover,.nav-li-blogs:hover {
   cursor: pointer;
   color: #000000
@@ -32,12 +31,7 @@
   font-size: 16px;
   justify-content: space-between;
   margin-left: 100px;
-
-  
-  
-  
 }
-
 .nav-ul li:hover ul#submenu,.nav-ul li:hover ul#submenu1 {
   opacity: 1;
   visibility: visible;
@@ -129,36 +123,10 @@
     /* margin-top: -5px; */
 }
   
-  /* Media query for screens smaller than 768px */
-  @media (max-width: 768px) {
-    .header-nav {
-      padding: 30px 50px;
-    }
-  }
-  
-  /* Media query for screens smaller than 576px */
-  @media (max-width: 576px) {
-    .header-nav {
-      padding: 20px 30px;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .logo {
-      margin-bottom: 20px;
-    }
-  
-    .nav-ul {
-      flex-direction: column;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-  }
-  
-  /* Styles for all screen sizes */
+/* Styles for all screen sizes */
   .logo {
-    width: 153px;
-    height: 50px;
+    max-width: 153px;
+    max-height: auto;
   }
   
   .nav-ul {
@@ -194,5 +162,59 @@
   #home-id {
     color: black;
   }
-  
 
+
+ 
+ /* @media only screen and (max-width: 600px) {
+    .header-nav ul li{
+      display: none;
+    }
+  }   */
+
+
+  /* Styles for mobile devices */
+@media only screen and (max-width: 767px) {
+
+  .header-nav {
+    padding: 15px 30px;
+  }
+
+  #submenu2 {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px 20px;
+    justify-content: center;
+  }
+
+  .nav-ul li {
+    font-size: 14px;
+  }
+
+  .nav-ul {
+    gap: 20px;
+    font-size: 15px;
+  }
+
+  .blog-li {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .graphic-hr,
+  .dev-hr,
+  .security-hr {
+    width: 150px;
+    margin-right: -90px;
+    margin-left: -20px;
+  }
+  .nav-ul,
+  .nav-contact {
+    display: none;
+  }
+  .logo {
+    display: block;
+    margin-left: 200px; 
+    max-width: 150px;
+
+  }
+}
